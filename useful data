@@ -1,7 +1,8 @@
-rostopic pub /inverted_pendulum/control_force inverted_pendulum_sim/ControlForce "force: 10"
+Using this repository:
 
 
-rosservice call /inverted_pendulum/set_params 2 300 0.5 3.14 0 0 0 0 0
+After launching the simulation node from inverse_pendulum_sim_node, we have three scripts to run.
 
-
-I =1/3 m*l^2
+1. seParams.py - sets the initial parametes to the system.
+2. sinusoidal.py - gives sinusoidal force to the cart.
+3. invpid.py - balances the inverted pendulum using pid.
